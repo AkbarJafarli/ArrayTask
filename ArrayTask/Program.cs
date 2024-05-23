@@ -4,19 +4,55 @@
     {
         static void Main(string[] args)
         {
-            int[] numbers = { 11, 12, 13, 14, 15, 16, 17, 18, 19, };
-            for (int i = numbers.Length - 1; i >= 0; i--)
+            //int[] numbers = { 11, 12, 13, 14, 15, 16, 17, 18, 19, };
+            //for (int i = numbers.Length - 1; i >= 0; i--)
+            //{
+            //    if (i == 0)
+            //    {
+            //        Console.Write(numbers[i]);
+            //        break;
+            //    }
+            //    Console.Write(numbers[i] + ",");
+
+
+
+            //}
+
+            //======================================================
+            //======================================================
+
+
+            int[] numbers1 = { 1, 2, 3 };
+            int[] numbers2 = { 9, 10, 11, 12, 13, 14, 15, 16, 1, 2, 3 };
+            bool isExist = false;
+            for (int i = 0; i < numbers1.Length; i++)
             {
-                if (i == 0)
+                for (int j = 0; j < numbers2.Length; j++)
                 {
-                    Console.Write(numbers[i]);
-                    break;
+                    if (numbers1[i] == numbers2[j])
+                    {
+                        isExist = true;
+                        break;
+                    }
+                    else
+                    {
+                        isExist = false;
+                    }
+
                 }
-                Console.Write(numbers[i] + ",");
-
-
 
             }
+            if (isExist)
+            {
+                Console.WriteLine("Movcuddur");
+            }
+            else
+            {
+                Console.WriteLine("Movcud deyil");
+            }
+
+
+
         }
     }
 }
