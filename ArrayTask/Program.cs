@@ -14,6 +14,8 @@
                 }
                 Console.Write(numbers[i] + ",");
 
+
+
             }
         }
     }
